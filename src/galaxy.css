@@ -1,0 +1,10 @@
+.galaxy-container {
+  position: fixed;       /* stays behind everything */
+  top: 0;
+  left: 0;
+  width: 100vw;          /* full screen width */
+  height: 100vh;         /* full screen height */
+  z-index: -1;           /* behind all other elements */
+  overflow: hidden;
+  pointer-events: none;  /* prevents mouse blocking clicks */
+}

@@ -2,13 +2,13 @@
 import Result from "./Result";
 
 
-function Results({results, openPopup}) {
+function WatchedMovies({results}) {
   return (
     <section className="results">
         {results.map(result =>(
-            <Result key={result.imdbID} result={result} openPopup={openPopup}/>
+            <Result key={result.imdbID} result={result} canRate={true}/>
         ))}
     </section>
   )
 }   
-export default Results;
+export default WatchedMovies;
