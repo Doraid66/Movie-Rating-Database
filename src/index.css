@@ -1,0 +1,217 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.iridescence-container {
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  position: fixed;
+  pointer-events: none;
+  inset: 0;
+}
+
+
+
+body{
+  font-family: 'montserrat', sans-serif;
+  background-color: #223343;
+}
+
+header{
+padding: 50px 15px 0px;
+
+}
+
+
+header h1{
+  color: white;
+  font-size: 48px;
+  text-align: center;
+  font-weight: 500;
+}
+
+
+main{
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+
+}
+
+
+section{
+  padding: 15px;
+}
+
+.searchbox{
+  display: block;
+  width: 100%;
+  padding: 15px;
+
+  border: none;
+  outline: none;
+  background: none;
+
+  background-color: white;
+  border-radius: 8px;
+
+  color: #53565a;
+  font-size: 20px;
+  font-weight: 300;
+  transition: 0.4s ease-out;
+
+}
+
+.searchbox:focus{
+  box-shadow: 0 0 8px 3px #4484c4;
+}
+
+.results{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.results .result{
+  width: 33.333%;
+  min-width: 250px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+
+.results .result img{
+  display: block;
+  width: 100%;
+  border-radius: 6px;
+  box-shadow: 0 0 8px 3px rgba(0,0,0,0.1);
+  transition: 0.4s ease-out;
+
+}
+
+
+.results .result h3{
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px;
+  background: #445565;
+  flex: 1 1 1 100%;
+  transition: 0.4s ease-out;
+} 
+
+
+.results .result:hover h3{
+  background: #FFF;
+  color: #223343;
+}
+
+.popup{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #223343;;
+  display: flex;
+  overflow-y: scroll;
+}
+
+
+.popup .content{
+  display: block;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 25px;
+  color: #fff;
+
+}
+
+.popup .content h2{
+  font-size: 28px;
+  font-weight: 600;
+}
+
+
+.popup .content h2 span{
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.popup .content .rating{
+  margin-bottom: 30px;
+}
+
+.popup .content .plot{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px -15px 30px;
+}
+
+.popup .content .plot img{
+  flex: 1 1  50%;
+  max-width: 300px;
+  padding: 0px 15px;
+}
+
+.popup .content .plot p{
+  flex: 1 1 50%;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.6em;
+}
+
+
+
+.popup .content .close{
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: 700;
+
+  background-color: #5793cf;
+
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  outline: none;
+  appearance: none;
+  cursor: pointer;
+  transition: 0.4s ease-out;
+  margin-right: 15px;
+}
+
+.popup .content .close:hover{
+  background-color: #335a80;
+}
+
+.menu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #445565;
+}
+
+.menu .logo{
+  color: white;
+  font-size: 24px;
+  font-weight: 600;
+}
+.menu .menu-items a{
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  transition: 0.4s ease-out;
+}
