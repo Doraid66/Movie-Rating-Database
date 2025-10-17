@@ -1,6 +1,6 @@
 import React from "react";
 
-function Popup({selected, closePopup}) {
+function Popup({selected, closePopup, addToWatched}) {
     return (
         <section className="popup">
             <div className="content">
@@ -11,7 +11,7 @@ function Popup({selected, closePopup}) {
                     <p>{selected.Plot}</p>
                 </div>
                 <button className="close" onClick={closePopup}>Close</button>
-                <button className="close">Rate</button>
+                <button className="close" onClick={()=>{ addToWatched(selected); closePopup()}}>Watched</button>
             </div>
         </section>
     )
